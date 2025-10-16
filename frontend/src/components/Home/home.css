@@ -1,0 +1,97 @@
+/* 🌿 GreenScan Home Page Enhancements */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25));
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.hero-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.4rem;
+  padding: 0.7rem 1.4rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .primary {
+  background: linear-gradient(to right, #16a34a, #059669);
+  color: white;
+}
+
+.hero-buttons .primary:hover {
+  background: linear-gradient(to right, #15803d, #047857);
+  transform: scale(0.98);
+}
+
+.hero-buttons .secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.hero-buttons .secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+  transition: 0.3s ease;
+}
+
+.news-card img {
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover img {
+  transform: scale(1.05);
+}
